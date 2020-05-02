@@ -30,7 +30,8 @@
         <script>
 
             // Connexion to socket.io
-            var socket = io.connect('http://localhost:3000');
+            //var socket = io.connect('http://localhost:3000');
+			var socket = io.connect(); // for PaaS heroku 
 
             // We ask for the pseudo, we send it to the server and we display it in the title
             var pseudo = prompt('What is your pseudo ?');
